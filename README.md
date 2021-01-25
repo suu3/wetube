@@ -1,2 +1,3 @@
-# wetube
- clone coding
+# Wetube
+
+Cloning Youtube with Vanilla and NodeJS
