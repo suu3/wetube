@@ -1,4 +1,5 @@
 extends layouts/main
+include mixins/videoBlock
 
 block content
     .user-profile
@@ -15,3 +16,13 @@ block content
                     button ✏️ Edit Profile
                 a(href=`/users${routes.changePassword}`)
                     button 🔒 Change Password
+        
+        //그 사람이 업로드 한 비디오 목록
+        .home-videos
+            each item in user.videos 
+                +videoBlock({
+                    id:item.id,
+                    title:item.title,
+                    views:item.views,
+                    videoFile:item.fileUrl
+                })
