@@ -6,6 +6,7 @@ import routes from "./routes";
 
 passport.use(User.createStrategy());
 
+//github
 passport.use(
     new GithubStrategy(
         {
@@ -16,6 +17,7 @@ passport.use(
         githubLoginCallback
     )
 );
+
 
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());

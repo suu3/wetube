@@ -7,6 +7,7 @@ const SEARCH = "/search";
 
 // Users
 
+const BASE = "http://localhost:4000/";
 const USERS = "/users";
 const USER_DETAIL = "/:id";
 const EDIT_PROFILE = "/edit-profile";
@@ -32,8 +33,8 @@ const routes = {
     logout: LOGOUT,
     search: SEARCH,
     users: USERS,
-    userDetail: (id) => {
-        if(id){
+    userDetail: id => {
+        if (id) {
             return `/users/${id}`;
         } else{
             return USER_DETAIL;
@@ -66,7 +67,8 @@ const routes = {
     },
     gitHub: GITHUB,
     githubCallback: GITHUB_CALLBACK,
-    me: ME
+    me: ME,
+    base: BASE
 };
 
 export default routes;
