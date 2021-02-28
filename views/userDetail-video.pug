@@ -5,7 +5,7 @@ block content
     .user-profile
         .user-profile__header
             if typeof user.avatarUrl !== "undefined"
-                img.u-avatar(src=user.avatarUrl)
+                img.u-avatar(src=`${routes.base}${user.avatarUrl}`)
             h4.profile__username=user.name
         if loggedUser && user.id === loggedUser.id
             .user-profile__btns
