@@ -1,3 +1,4 @@
+/*config*/
 html,
 body,
 div,
@@ -216,6 +217,7 @@ button,
 input[type="submit"] {
   cursor: pointer; }
 
+/*partials*/
 .header {
   background-color: #ea232c;
   margin-bottom: 50px; }
@@ -312,6 +314,58 @@ input[type="submit"] {
     font-weight: 800;
     text-transform: uppercase; }
 
+.social-login {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%; }
+  .social-login button {
+    width: 100%;
+    max-width: 320px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .social-login button:not(:last-child) {
+      margin-bottom: 15px; }
+    .social-login button span {
+      margin-right: 10px;
+      font-size: 20px; }
+    .social-login button a:visited {
+      color: white;
+      text-decoration: none; }
+  .social-login .social-login--github {
+    background-color: #444444;
+    color: white; }
+  .social-login .social-login--kakao {
+    background-color: #feea06;
+    color: black; }
+
 .form-container {
   width: 100%;
   display: -webkit-box;
@@ -361,55 +415,6 @@ input[type="submit"] {
   .form-container .fileUpload label {
     font-weight: 300;
     margin-right: 10px; }
-
-.social-login {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-     -moz-box-orient: vertical;
-     -moz-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%; }
-  .social-login button {
-    width: 100%;
-    max-width: 320px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-       -moz-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-       -moz-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .social-login button:not(:last-child) {
-      margin-bottom: 15px; }
-    .social-login button span {
-      margin-right: 10px;
-      font-size: 20px; }
-  .social-login .social-login--github {
-    background-color: #444444;
-    color: white; }
-  .social-login .social-login--facebook {
-    background-color: #3a5998;
-    color: white; }
 
 .videoBlock video {
   margin-bottom: 10px;
@@ -500,6 +505,7 @@ input[type="submit"] {
     width: 100%;
     margin-bottom: 20px; }
 
+/*pages*/
 .home-videos {
   display: grid;
   grid-template-columns: repeat(6, minmax(150px, 1fr));

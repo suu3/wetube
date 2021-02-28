@@ -16,13 +16,17 @@
       margin-right: 10px;
       font-size: 20px;
     }
+    a:visited {
+      color: white;
+      text-decoration: none;
+    }
   }
   .social-login--github {
     background-color: $black;
     color: white;
   }
-  .social-login--facebook {
-    background-color: #3a5998;
-    color: white;
+  .social-login--kakao {
+    background-color: $yellow;
+    color: black;
   }
 }
